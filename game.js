@@ -18,7 +18,7 @@ function getHumanChoice(){
     } else {
         alert('Incorrect input')
 
-        getHumanChoice()
+        return getHumanChoice()
     }
 }
 
@@ -54,7 +54,7 @@ function playGame(){
         console.log(humanScore + '   ' + computerScore)
     }
 
-    while(humanScore < 5 || computerScore < 5){
+    while(humanScore < 5 && computerScore < 5){
 
         let humanChoice = getHumanChoice()
         let computerChoice = getComputerChoice()
